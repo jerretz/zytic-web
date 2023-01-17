@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: #1A1A1A;
+}
+
+nav {
+    background-color: transparent; /* make the nav transparent */
+    display: flex; /* display the items horizontally */
+    justify-content: space-between; /* distribute the items evenly across the nav */
+    font-family: 'Open Sans', sans-serif; /* use the "Open Sans" font */
+  }
+  
+  nav ul {
+    list-style: none; /* remove the bullet points */
+    margin: 0; /* remove the margin */
+    padding: 0; /* remove the padding */
+    display: flex; /* display the items horizontally */
+  }
+  
+  nav li {
+    margin: 0 10px; /* add some space between the items */
+  }
+  
+  nav a {
+    color: #09e1e9; /* set the text color */
+    text-decoration: none; /* remove the underline */
+    font-size: 20px; /* set the font size */
+    transition: all 0.2s ease-in-out; /* add a transition for the hover animation */
+  }
+  
+  nav a:hover {
+    color: #6200EA; /* change the text color on hover */
+    transform: scale(1.1); /* scale the item up on hover */
+  }
+  
+  /* Responsive styles */
+  @media only screen and (max-width: 600px) {
+    nav {
+      flex-direction: column; /* stack the items vertically on small screens */
+    }
+    nav li {
+      margin: 10px 0; /* change the margin on small screens */
+    }
+  }
